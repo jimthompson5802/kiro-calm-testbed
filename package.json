@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@finos/calm-ai": "file:../architecture-as-code/calm-ai",
+    "@finos/calm-cli": "file:../architecture-as-code/cli"
+  }
+}
