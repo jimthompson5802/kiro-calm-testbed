@@ -1,0 +1,26 @@
+{
+  "id": "nodes/payment-api-gateway",
+  "title": "Payment API Gateway",
+  "description": "Details",
+  "source": "@site/docs/nodes/payment-api-gateway.md",
+  "sourceDirName": "nodes",
+  "slug": "/nodes/payment-api-gateway",
+  "permalink": "/nodes/payment-api-gateway",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "payment-api-gateway",
+    "title": "Payment API Gateway"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Home",
+    "permalink": "/"
+  },
+  "next": {
+    "title": "Payment Processor Service",
+    "permalink": "/nodes/payment-processor"
+  }
+}

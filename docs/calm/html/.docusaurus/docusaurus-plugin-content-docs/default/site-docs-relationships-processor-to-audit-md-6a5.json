@@ -1,0 +1,26 @@
+{
+  "id": "relationships/processor-to-audit",
+  "title": "Processor To Audit",
+  "description": "Details",
+  "source": "@site/docs/relationships/processor-to-audit.md",
+  "sourceDirName": "relationships",
+  "slug": "/relationships/processor-to-audit",
+  "permalink": "/relationships/processor-to-audit",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "processor-to-audit",
+    "title": "Processor To Audit"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Processor To Notifications",
+    "permalink": "/relationships/processor-to-notifications"
+  },
+  "next": {
+    "title": "Administrator To Gateway",
+    "permalink": "/relationships/administrator-to-gateway"
+  }
+}

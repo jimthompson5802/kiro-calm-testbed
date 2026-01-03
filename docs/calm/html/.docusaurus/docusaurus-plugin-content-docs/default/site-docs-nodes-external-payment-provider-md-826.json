@@ -1,0 +1,26 @@
+{
+  "id": "nodes/external-payment-provider",
+  "title": "External Payment Provider",
+  "description": "Details",
+  "source": "@site/docs/nodes/external-payment-provider.md",
+  "sourceDirName": "nodes",
+  "slug": "/nodes/external-payment-provider",
+  "permalink": "/nodes/external-payment-provider",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "external-payment-provider",
+    "title": "External Payment Provider"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Redis Cache Cluster",
+    "permalink": "/nodes/redis-cache"
+  },
+  "next": {
+    "title": "Notification Service",
+    "permalink": "/nodes/notification-service"
+  }
+}

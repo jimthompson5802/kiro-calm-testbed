@@ -1,0 +1,26 @@
+{
+  "id": "relationships/processor-to-database",
+  "title": "Processor To Database",
+  "description": "Details",
+  "source": "@site/docs/relationships/processor-to-database.md",
+  "sourceDirName": "relationships",
+  "slug": "/relationships/processor-to-database",
+  "permalink": "/relationships/processor-to-database",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "processor-to-database",
+    "title": "Processor To Database"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Gateway To Processor",
+    "permalink": "/relationships/gateway-to-processor"
+  },
+  "next": {
+    "title": "Processor To Cache",
+    "permalink": "/relationships/processor-to-cache"
+  }
+}

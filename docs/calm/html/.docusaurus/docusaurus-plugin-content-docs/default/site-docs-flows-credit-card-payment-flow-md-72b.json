@@ -1,0 +1,26 @@
+{
+  "id": "flows/credit-card-payment-flow",
+  "title": "Credit Card Payment Processing",
+  "description": "Details",
+  "source": "@site/docs/flows/credit-card-payment-flow.md",
+  "sourceDirName": "flows",
+  "slug": "/flows/credit-card-payment-flow",
+  "permalink": "/flows/credit-card-payment-flow",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "credit-card-payment-flow",
+    "title": "Credit Card Payment Processing"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Customer To Gateway",
+    "permalink": "/relationships/customer-to-gateway"
+  },
+  "next": {
+    "title": "Payment Refund Processing",
+    "permalink": "/flows/refund-processing-flow"
+  }
+}

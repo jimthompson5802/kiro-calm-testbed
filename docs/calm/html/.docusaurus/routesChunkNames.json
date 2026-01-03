@@ -1,0 +1,144 @@
+{
+  "/__docusaurus/debug-5ff": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/config-5ba": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/content-a2b": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    },
+    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
+  },
+  "/__docusaurus/debug/globalData-c3c": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/metadata-156": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/registry-88c": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/routes-000": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/search-044": {
+    "__comp": "__comp---theme-search-page-1-a-4-d6f",
+    "__context": {
+      "plugin": "plugin---search-136-801"
+    }
+  },
+  "/-bab": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---aba-d70"
+    }
+  },
+  "/-da4": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---22-d-307"
+  },
+  "/-d79": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/flows/credit-card-payment-flow-01d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---flows-credit-card-payment-flow-72-b-d70"
+  },
+  "/flows/refund-processing-flow-29b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---flows-refund-processing-flowf-1-c-be0"
+  },
+  "/nodes/administrator-d02": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---nodes-administratord-8-e-7a5"
+  },
+  "/nodes/audit-log-store-70c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---nodes-audit-log-store-047-c56"
+  },
+  "/nodes/customer-e62": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---nodes-customercc-1-95c"
+  },
+  "/nodes/external-payment-provider-8d8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---nodes-external-payment-provider-826-5fa"
+  },
+  "/nodes/notification-service-659": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---nodes-notification-service-4-a-2-fd1"
+  },
+  "/nodes/payment-api-gateway-618": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---nodes-payment-api-gatewaybe-6-b05"
+  },
+  "/nodes/payment-database-497": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---nodes-payment-database-985-26d"
+  },
+  "/nodes/payment-processor-7b2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---nodes-payment-processor-437-17f"
+  },
+  "/nodes/redis-cache-8fc": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---nodes-redis-cacheed-4-783"
+  },
+  "/relationships/administrator-to-gateway-f2c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---relationships-administrator-to-gateway-4-f-7-df1"
+  },
+  "/relationships/customer-to-gateway-786": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---relationships-customer-to-gatewayc-5-d-17c"
+  },
+  "/relationships/gateway-to-processor-679": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---relationships-gateway-to-processordef-1cd"
+  },
+  "/relationships/processor-to-audit-e82": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---relationships-processor-to-audit-6-a-5-75a"
+  },
+  "/relationships/processor-to-cache-9dd": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---relationships-processor-to-cacheeaa-757"
+  },
+  "/relationships/processor-to-database-adb": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---relationships-processor-to-database-40-f-aa9"
+  },
+  "/relationships/processor-to-external-provider-2fa": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---relationships-processor-to-external-provider-4-aa-14b"
+  },
+  "/relationships/processor-to-notifications-e73": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---relationships-processor-to-notificationsf-29-864"
+  },
+  "/-bea": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---c-37-d02"
+  }
+}

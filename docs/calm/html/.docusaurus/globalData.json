@@ -1,0 +1,148 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/",
+          "mainDocId": "index",
+          "docs": [
+            {
+              "id": "flows/credit-card-payment-flow",
+              "path": "/flows/credit-card-payment-flow",
+              "sidebar": "docs"
+            },
+            {
+              "id": "flows/refund-processing-flow",
+              "path": "/flows/refund-processing-flow",
+              "sidebar": "docs"
+            },
+            {
+              "id": "index",
+              "path": "/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "nodes/administrator",
+              "path": "/nodes/administrator",
+              "sidebar": "docs"
+            },
+            {
+              "id": "nodes/audit-log-store",
+              "path": "/nodes/audit-log-store",
+              "sidebar": "docs"
+            },
+            {
+              "id": "nodes/customer",
+              "path": "/nodes/customer",
+              "sidebar": "docs"
+            },
+            {
+              "id": "nodes/external-payment-provider",
+              "path": "/nodes/external-payment-provider",
+              "sidebar": "docs"
+            },
+            {
+              "id": "nodes/notification-service",
+              "path": "/nodes/notification-service",
+              "sidebar": "docs"
+            },
+            {
+              "id": "nodes/payment-api-gateway",
+              "path": "/nodes/payment-api-gateway",
+              "sidebar": "docs"
+            },
+            {
+              "id": "nodes/payment-database",
+              "path": "/nodes/payment-database",
+              "sidebar": "docs"
+            },
+            {
+              "id": "nodes/payment-processor",
+              "path": "/nodes/payment-processor",
+              "sidebar": "docs"
+            },
+            {
+              "id": "nodes/redis-cache",
+              "path": "/nodes/redis-cache",
+              "sidebar": "docs"
+            },
+            {
+              "id": "relationships/administrator-to-gateway",
+              "path": "/relationships/administrator-to-gateway",
+              "sidebar": "docs"
+            },
+            {
+              "id": "relationships/customer-to-gateway",
+              "path": "/relationships/customer-to-gateway",
+              "sidebar": "docs"
+            },
+            {
+              "id": "relationships/gateway-to-processor",
+              "path": "/relationships/gateway-to-processor",
+              "sidebar": "docs"
+            },
+            {
+              "id": "relationships/processor-to-audit",
+              "path": "/relationships/processor-to-audit",
+              "sidebar": "docs"
+            },
+            {
+              "id": "relationships/processor-to-cache",
+              "path": "/relationships/processor-to-cache",
+              "sidebar": "docs"
+            },
+            {
+              "id": "relationships/processor-to-database",
+              "path": "/relationships/processor-to-database",
+              "sidebar": "docs"
+            },
+            {
+              "id": "relationships/processor-to-external-provider",
+              "path": "/relationships/processor-to-external-provider",
+              "sidebar": "docs"
+            },
+            {
+              "id": "relationships/processor-to-notifications",
+              "path": "/relationships/processor-to-notifications",
+              "sidebar": "docs"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "docs": {
+              "link": {
+                "path": "/",
+                "label": "Home"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  },
+  "docusaurus-plugin-search-local": {
+    "default": {
+      "externalSearchSources": [],
+      "removeDefaultStopWordFilter": true,
+      "searchResultContextMaxLength": 50,
+      "searchResultLimits": 5,
+      "translations": {
+        "search_placeholder": "Search",
+        "see_all_results": "See all results",
+        "no_results": "No results.",
+        "search_results_for": "Search results for \"{{ keyword }}\"",
+        "search_the_documentation": "Search the documentation",
+        "count_documents_found_plural": "{{ count }} documents found",
+        "count_documents_found": "{{ count }} document found",
+        "no_documents_were_found": "No documents were found"
+      },
+      "highlightSearchTermsOnTargetPage": true,
+      "indexHash": null
+    }
+  }
+}

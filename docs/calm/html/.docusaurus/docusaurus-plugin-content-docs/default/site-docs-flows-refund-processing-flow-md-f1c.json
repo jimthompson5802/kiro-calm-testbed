@@ -1,0 +1,22 @@
+{
+  "id": "flows/refund-processing-flow",
+  "title": "Payment Refund Processing",
+  "description": "Details",
+  "source": "@site/docs/flows/refund-processing-flow.md",
+  "sourceDirName": "flows",
+  "slug": "/flows/refund-processing-flow",
+  "permalink": "/flows/refund-processing-flow",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "refund-processing-flow",
+    "title": "Payment Refund Processing"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Credit Card Payment Processing",
+    "permalink": "/flows/credit-card-payment-flow"
+  }
+}

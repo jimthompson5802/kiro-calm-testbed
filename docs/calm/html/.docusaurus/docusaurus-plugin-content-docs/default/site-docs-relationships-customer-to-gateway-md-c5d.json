@@ -1,0 +1,26 @@
+{
+  "id": "relationships/customer-to-gateway",
+  "title": "Customer To Gateway",
+  "description": "Details",
+  "source": "@site/docs/relationships/customer-to-gateway.md",
+  "sourceDirName": "relationships",
+  "slug": "/relationships/customer-to-gateway",
+  "permalink": "/relationships/customer-to-gateway",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "customer-to-gateway",
+    "title": "Customer To Gateway"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Administrator To Gateway",
+    "permalink": "/relationships/administrator-to-gateway"
+  },
+  "next": {
+    "title": "Credit Card Payment Processing",
+    "permalink": "/flows/credit-card-payment-flow"
+  }
+}

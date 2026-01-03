@@ -1,0 +1,26 @@
+{
+  "id": "nodes/notification-service",
+  "title": "Notification Service",
+  "description": "Details",
+  "source": "@site/docs/nodes/notification-service.md",
+  "sourceDirName": "nodes",
+  "slug": "/nodes/notification-service",
+  "permalink": "/nodes/notification-service",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "notification-service",
+    "title": "Notification Service"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "External Payment Provider",
+    "permalink": "/nodes/external-payment-provider"
+  },
+  "next": {
+    "title": "Audit Log Store",
+    "permalink": "/nodes/audit-log-store"
+  }
+}

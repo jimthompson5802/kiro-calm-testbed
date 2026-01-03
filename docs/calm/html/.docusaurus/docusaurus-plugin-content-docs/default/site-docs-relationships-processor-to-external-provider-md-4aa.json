@@ -1,0 +1,26 @@
+{
+  "id": "relationships/processor-to-external-provider",
+  "title": "Processor To External Provider",
+  "description": "Details",
+  "source": "@site/docs/relationships/processor-to-external-provider.md",
+  "sourceDirName": "relationships",
+  "slug": "/relationships/processor-to-external-provider",
+  "permalink": "/relationships/processor-to-external-provider",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "processor-to-external-provider",
+    "title": "Processor To External Provider"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Processor To Cache",
+    "permalink": "/relationships/processor-to-cache"
+  },
+  "next": {
+    "title": "Processor To Notifications",
+    "permalink": "/relationships/processor-to-notifications"
+  }
+}

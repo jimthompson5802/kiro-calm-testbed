@@ -1,0 +1,26 @@
+{
+  "id": "nodes/administrator",
+  "title": "Administrator",
+  "description": "Details",
+  "source": "@site/docs/nodes/administrator.md",
+  "sourceDirName": "nodes",
+  "slug": "/nodes/administrator",
+  "permalink": "/nodes/administrator",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "administrator",
+    "title": "Administrator"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Audit Log Store",
+    "permalink": "/nodes/audit-log-store"
+  },
+  "next": {
+    "title": "Customer",
+    "permalink": "/nodes/customer"
+  }
+}

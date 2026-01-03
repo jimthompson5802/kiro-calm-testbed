@@ -1,0 +1,26 @@
+{
+  "id": "relationships/administrator-to-gateway",
+  "title": "Administrator To Gateway",
+  "description": "Details",
+  "source": "@site/docs/relationships/administrator-to-gateway.md",
+  "sourceDirName": "relationships",
+  "slug": "/relationships/administrator-to-gateway",
+  "permalink": "/relationships/administrator-to-gateway",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "administrator-to-gateway",
+    "title": "Administrator To Gateway"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Processor To Audit",
+    "permalink": "/relationships/processor-to-audit"
+  },
+  "next": {
+    "title": "Customer To Gateway",
+    "permalink": "/relationships/customer-to-gateway"
+  }
+}

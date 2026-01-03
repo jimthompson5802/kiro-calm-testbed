@@ -1,0 +1,26 @@
+{
+  "id": "relationships/gateway-to-processor",
+  "title": "Gateway To Processor",
+  "description": "Details",
+  "source": "@site/docs/relationships/gateway-to-processor.md",
+  "sourceDirName": "relationships",
+  "slug": "/relationships/gateway-to-processor",
+  "permalink": "/relationships/gateway-to-processor",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "gateway-to-processor",
+    "title": "Gateway To Processor"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Customer",
+    "permalink": "/nodes/customer"
+  },
+  "next": {
+    "title": "Processor To Database",
+    "permalink": "/relationships/processor-to-database"
+  }
+}
