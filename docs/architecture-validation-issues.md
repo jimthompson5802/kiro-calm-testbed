@@ -1,3 +1,9 @@
+### Issue resolved
+
+With the conversion from file pattern inclusion rule to `manual`, and using the explicit steering document in the command, the following issue no longer occurs.
+
+---
+
 output from `npx clam validate -a docs/calm/payment.calm.json`
 
 ```
