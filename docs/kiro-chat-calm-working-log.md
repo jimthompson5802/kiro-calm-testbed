@@ -1,9 +1,27 @@
-New Session
 
 
+## Modifications to all files in `.kiro/steering`
+
+Change from file pattern matchin
+
+```
+---
+inclusion: fileMatch
+fileMatchPattern: ['**/*.architecture.json', 'calm/**/*.json']
+---
+
+```
+
+to **manual** inclusion
+
+```
+---
+inclusion: manual
+---
+```
 
 
-
+## Kiro Chat Log
 Checkpoint
 Restore
 ### #architecture-creation.md   create sample payment system architecture in docs/payment-system.architecture.json
