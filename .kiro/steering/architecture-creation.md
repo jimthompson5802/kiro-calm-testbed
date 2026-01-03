@@ -1,6 +1,5 @@
 ---
-inclusion: fileMatch
-fileMatchPattern: ['**/*.architecture.json', 'calm/**/*.json']
+inclusion: manual
 ---
 
 # CALM Architecture Creation Guide
