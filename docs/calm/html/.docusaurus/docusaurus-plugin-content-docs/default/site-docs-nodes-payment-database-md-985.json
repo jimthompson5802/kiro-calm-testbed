@@ -1,0 +1,26 @@
+{
+  "id": "nodes/payment-database",
+  "title": "Payment Transaction Database",
+  "description": "Details",
+  "source": "@site/docs/nodes/payment-database.md",
+  "sourceDirName": "nodes",
+  "slug": "/nodes/payment-database",
+  "permalink": "/nodes/payment-database",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "payment-database",
+    "title": "Payment Transaction Database"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Payment Processor Service",
+    "permalink": "/nodes/payment-processor"
+  },
+  "next": {
+    "title": "Redis Cache Cluster",
+    "permalink": "/nodes/redis-cache"
+  }
+}

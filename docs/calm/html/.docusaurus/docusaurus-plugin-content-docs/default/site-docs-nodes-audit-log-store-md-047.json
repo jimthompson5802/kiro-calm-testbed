@@ -1,0 +1,26 @@
+{
+  "id": "nodes/audit-log-store",
+  "title": "Audit Log Store",
+  "description": "Details",
+  "source": "@site/docs/nodes/audit-log-store.md",
+  "sourceDirName": "nodes",
+  "slug": "/nodes/audit-log-store",
+  "permalink": "/nodes/audit-log-store",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "audit-log-store",
+    "title": "Audit Log Store"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Notification Service",
+    "permalink": "/nodes/notification-service"
+  },
+  "next": {
+    "title": "Gateway To Processor",
+    "permalink": "/relationships/gateway-to-processor"
+  }
+}

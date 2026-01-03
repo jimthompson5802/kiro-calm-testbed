@@ -1,0 +1,26 @@
+{
+  "id": "nodes/redis-cache",
+  "title": "Redis Cache Cluster",
+  "description": "Details",
+  "source": "@site/docs/nodes/redis-cache.md",
+  "sourceDirName": "nodes",
+  "slug": "/nodes/redis-cache",
+  "permalink": "/nodes/redis-cache",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "redis-cache",
+    "title": "Redis Cache Cluster"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Payment Transaction Database",
+    "permalink": "/nodes/payment-database"
+  },
+  "next": {
+    "title": "External Payment Provider",
+    "permalink": "/nodes/external-payment-provider"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "relationships/processor-to-notifications",
+  "title": "Processor To Notifications",
+  "description": "Details",
+  "source": "@site/docs/relationships/processor-to-notifications.md",
+  "sourceDirName": "relationships",
+  "slug": "/relationships/processor-to-notifications",
+  "permalink": "/relationships/processor-to-notifications",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "processor-to-notifications",
+    "title": "Processor To Notifications"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Processor To External Provider",
+    "permalink": "/relationships/processor-to-external-provider"
+  },
+  "next": {
+    "title": "Processor To Audit",
+    "permalink": "/relationships/processor-to-audit"
+  }
+}

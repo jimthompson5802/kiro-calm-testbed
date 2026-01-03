@@ -1,0 +1,26 @@
+{
+  "id": "relationships/processor-to-cache",
+  "title": "Processor To Cache",
+  "description": "Details",
+  "source": "@site/docs/relationships/processor-to-cache.md",
+  "sourceDirName": "relationships",
+  "slug": "/relationships/processor-to-cache",
+  "permalink": "/relationships/processor-to-cache",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "processor-to-cache",
+    "title": "Processor To Cache"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Processor To Database",
+    "permalink": "/relationships/processor-to-database"
+  },
+  "next": {
+    "title": "Processor To External Provider",
+    "permalink": "/relationships/processor-to-external-provider"
+  }
+}

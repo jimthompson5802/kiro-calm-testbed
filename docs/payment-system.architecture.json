@@ -1,0 +1,310 @@
+{
+    "$schema": "https://calm.finos.org/release/1.1/meta/calm.json",
+    "unique-id": "payment-processing-system",
+    "name": "Payment Processing System",
+    "description": "Core payment processing architecture handling transactions, settlements, and reconciliation for all payment types including credit cards, bank transfers, and digital wallets",
+    "metadata": {
+        "version": "2.1.0",
+        "owner": "Payment Platform Team",
+        "environment": "production",
+        "compliance": ["PCI-DSS", "SOX", "GDPR"],
+        "criticality": "high",
+        "last-updated": "2025-01-03T10:00:00Z",
+        "business-unit": "Financial Services",
+        "cost-center": "FINTECH-001"
+    },
+    "nodes": [
+        {
+            "unique-id": "payment-api-gateway",
+            "node-type": "service",
+            "name": "Payment API Gateway",
+            "description": "Main entry point for all payment requests with authentication, rate limiting, and routing",
+            "interfaces": [
+                {
+                    "unique-id": "payment-gateway-endpoint",
+                    "url": "https://api.company.com/payments/v1",
+                    "protocol": "HTTPS"
+                }
+            ],
+            "metadata": {
+                "runtime": "Node.js 18",
+                "framework": "Express.js",
+                "deployment": "Kubernetes",
+                "replicas": 3
+            }
+        },
+        {
+            "unique-id": "payment-processor",
+            "node-type": "service",
+            "name": "Payment Processor Service",
+            "description": "Core business logic for processing different payment types and orchestrating transactions",
+            "interfaces": [
+                {
+                    "unique-id": "processor-internal-api",
+                    "url": "http://payment-processor.internal:8080/api/v1"
+                }
+            ],
+            "metadata": {
+                "runtime": "Java 17",
+                "framework": "Spring Boot 3.1",
+                "deployment": "Kubernetes"
+            }
+        },
+        {
+            "unique-id": "payment-database",
+            "node-type": "database",
+            "name": "Payment Transaction Database",
+            "description": "Primary PostgreSQL database storing transaction records, payment methods, and audit logs",
+            "interfaces": [
+                {
+                    "unique-id": "db-connection",
+                    "host": "payment-db.internal.local",
+                    "port": 5432,
+                    "protocol": "PostgreSQL"
+                }
+            ],
+            "metadata": {
+                "database-type": "PostgreSQL 15",
+                "backup-frequency": "hourly",
+                "encryption": "AES-256"
+            }
+        },
+        {
+            "unique-id": "redis-cache",
+            "node-type": "cache",
+            "name": "Redis Cache Cluster",
+            "description": "High-performance cache for session data, rate limiting, and frequently accessed payment data",
+            "interfaces": [
+                {
+                    "unique-id": "redis-endpoint",
+                    "host": "redis-cluster.internal.local",
+                    "port": 6379
+                }
+            ]
+        },
+        {
+            "unique-id": "external-payment-provider",
+            "node-type": "external-service",
+            "name": "External Payment Provider",
+            "description": "Third-party payment processor (Stripe, PayPal, etc.) for card processing and settlements",
+            "interfaces": [
+                {
+                    "unique-id": "provider-api",
+                    "url": "https://api.stripe.com/v1"
+                }
+            ]
+        },
+        {
+            "unique-id": "notification-service",
+            "node-type": "service",
+            "name": "Notification Service",
+            "description": "Handles payment confirmations, failure notifications, and webhook deliveries",
+            "interfaces": [
+                {
+                    "unique-id": "notification-api",
+                    "url": "http://notifications.internal:8080/api/v1"
+                }
+            ]
+        },
+        {
+            "unique-id": "audit-log-store",
+            "node-type": "database",
+            "name": "Audit Log Store",
+            "description": "Immutable audit trail for all payment operations and compliance reporting",
+            "interfaces": [
+                {
+                    "unique-id": "audit-db-connection",
+                    "host": "audit-db.internal.local",
+                    "port": 5432
+                }
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "unique-id": "gateway-to-processor",
+            "description": "Routes authenticated payment requests to",
+            "relationship-type": {
+                "connects": {
+                    "source": { "node": "payment-api-gateway" },
+                    "destination": { "node": "payment-processor" }
+                }
+            },
+            "protocol": "HTTP"
+        },
+        {
+            "unique-id": "processor-to-database",
+            "description": "Stores and retrieves payment transaction data from",
+            "relationship-type": {
+                "connects": {
+                    "source": { "node": "payment-processor" },
+                    "destination": { "node": "payment-database" }
+                }
+            },
+            "protocol": "JDBC"
+        },
+        {
+            "unique-id": "processor-to-cache",
+            "description": "Caches session data and rate limiting information in",
+            "relationship-type": {
+                "connects": {
+                    "source": { "node": "payment-processor" },
+                    "destination": { "node": "redis-cache" }
+                }
+            },
+            "protocol": "TCP"
+        },
+        {
+            "unique-id": "processor-to-external-provider",
+            "description": "Processes card payments through",
+            "relationship-type": {
+                "connects": {
+                    "source": { "node": "payment-processor" },
+                    "destination": { "node": "external-payment-provider" }
+                }
+            },
+            "protocol": "HTTPS"
+        },
+        {
+            "unique-id": "processor-to-notifications",
+            "description": "Sends payment status updates via",
+            "relationship-type": {
+                "connects": {
+                    "source": { "node": "payment-processor" },
+                    "destination": { "node": "notification-service" }
+                }
+            },
+            "protocol": "HTTP"
+        },
+        {
+            "unique-id": "processor-to-audit",
+            "description": "Records all payment operations in",
+            "relationship-type": {
+                "connects": {
+                    "source": { "node": "payment-processor" },
+                    "destination": { "node": "audit-log-store" }
+                }
+            },
+            "protocol": "JDBC"
+        }
+    ],
+    "flows": [
+        {
+            "unique-id": "credit-card-payment-flow",
+            "name": "Credit Card Payment Processing",
+            "description": "End-to-end flow for processing credit card payments from request to settlement",
+            "transitions": [
+                {
+                    "relationship-unique-id": "gateway-to-processor",
+                    "sequence-number": 1,
+                    "description": "API Gateway validates and routes payment request to processor"
+                },
+                {
+                    "relationship-unique-id": "processor-to-cache",
+                    "sequence-number": 2,
+                    "description": "Check rate limits and retrieve cached payment method data"
+                },
+                {
+                    "relationship-unique-id": "processor-to-external-provider",
+                    "sequence-number": 3,
+                    "description": "Submit payment to external card processor for authorization"
+                },
+                {
+                    "relationship-unique-id": "processor-to-database",
+                    "sequence-number": 4,
+                    "description": "Store transaction record with authorization result"
+                },
+                {
+                    "relationship-unique-id": "processor-to-audit",
+                    "sequence-number": 5,
+                    "description": "Log payment operation for compliance audit trail"
+                },
+                {
+                    "relationship-unique-id": "processor-to-notifications",
+                    "sequence-number": 6,
+                    "description": "Send payment confirmation or failure notification to customer"
+                }
+            ]
+        },
+        {
+            "unique-id": "refund-processing-flow",
+            "name": "Payment Refund Processing",
+            "description": "Flow for processing payment refunds and reversals",
+            "transitions": [
+                {
+                    "relationship-unique-id": "gateway-to-processor",
+                    "sequence-number": 1,
+                    "description": "Receive refund request through API Gateway"
+                },
+                {
+                    "relationship-unique-id": "processor-to-database",
+                    "sequence-number": 2,
+                    "description": "Validate original transaction exists and is refundable"
+                },
+                {
+                    "relationship-unique-id": "processor-to-external-provider",
+                    "sequence-number": 3,
+                    "description": "Process refund through original payment provider"
+                },
+                {
+                    "relationship-unique-id": "processor-to-database",
+                    "sequence-number": 4,
+                    "description": "Update transaction status and create refund record"
+                },
+                {
+                    "relationship-unique-id": "processor-to-audit",
+                    "sequence-number": 5,
+                    "description": "Log refund operation for audit compliance"
+                },
+                {
+                    "relationship-unique-id": "processor-to-notifications",
+                    "sequence-number": 6,
+                    "description": "Notify customer of successful refund processing"
+                }
+            ]
+        }
+    ],
+    "controls": {
+        "pci-dss-compliance": {
+            "description": "PCI-DSS Level 1 compliance requirements for payment card data protection",
+            "requirements": [
+                {
+                    "requirement-url": "https://schemas.company.com/compliance/pci-dss.json",
+                    "config": {
+                        "scope": "cardholder-data",
+                        "validation-level": "Level-1",
+                        "encryption": "end-to-end",
+                        "tokenization": "required",
+                        "audit-frequency": "quarterly"
+                    }
+                }
+            ]
+        },
+        "data-encryption": {
+            "description": "Encryption requirements for payment data at rest and in transit",
+            "requirements": [
+                {
+                    "requirement-url": "https://schemas.company.com/security/encryption-standards.json",
+                    "config": {
+                        "at-rest": "AES-256",
+                        "in-transit": "TLS-1.3",
+                        "key-rotation": "90-days"
+                    }
+                }
+            ]
+        },
+        "gdpr-compliance": {
+            "description": "GDPR compliance for customer payment data and privacy rights",
+            "requirements": [
+                {
+                    "requirement-url": "https://schemas.company.com/compliance/gdpr.json",
+                    "config": {
+                        "data-retention": "7-years",
+                        "right-to-erasure": "supported",
+                        "consent-management": "explicit"
+                    }
+                }
+            ]
+        }
+    }
+}
