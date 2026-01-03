@@ -16,8 +16,8 @@
   },
   "sidebar": "docs",
   "previous": {
-    "title": "Processor To Audit",
-    "permalink": "/relationships/processor-to-audit"
+    "title": "Customer To Gateway",
+    "permalink": "/relationships/customer-to-gateway"
   },
   "next": {
     "title": "Payment Refund Processing",

@@ -44,15 +44,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', 'a5d'),
+    component: ComponentCreator('/', 'bab'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '5e6'),
+        component: ComponentCreator('/', 'da4'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '5fb'),
+            component: ComponentCreator('/', 'd79'),
             routes: [
               {
                 path: '/flows/credit-card-payment-flow',
@@ -67,8 +67,20 @@ export default [
                 sidebar: "docs"
               },
               {
+                path: '/nodes/administrator',
+                component: ComponentCreator('/nodes/administrator', 'd02'),
+                exact: true,
+                sidebar: "docs"
+              },
+              {
                 path: '/nodes/audit-log-store',
                 component: ComponentCreator('/nodes/audit-log-store', '70c'),
+                exact: true,
+                sidebar: "docs"
+              },
+              {
+                path: '/nodes/customer',
+                component: ComponentCreator('/nodes/customer', 'e62'),
                 exact: true,
                 sidebar: "docs"
               },
@@ -105,6 +117,18 @@ export default [
               {
                 path: '/nodes/redis-cache',
                 component: ComponentCreator('/nodes/redis-cache', '8fc'),
+                exact: true,
+                sidebar: "docs"
+              },
+              {
+                path: '/relationships/administrator-to-gateway',
+                component: ComponentCreator('/relationships/administrator-to-gateway', 'f2c'),
+                exact: true,
+                sidebar: "docs"
+              },
+              {
+                path: '/relationships/customer-to-gateway',
+                component: ComponentCreator('/relationships/customer-to-gateway', '786'),
                 exact: true,
                 sidebar: "docs"
               },

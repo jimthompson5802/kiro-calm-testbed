@@ -20,7 +20,7 @@
     "permalink": "/relationships/processor-to-notifications"
   },
   "next": {
-    "title": "Credit Card Payment Processing",
-    "permalink": "/flows/credit-card-payment-flow"
+    "title": "Administrator To Gateway",
+    "permalink": "/relationships/administrator-to-gateway"
   }
 }

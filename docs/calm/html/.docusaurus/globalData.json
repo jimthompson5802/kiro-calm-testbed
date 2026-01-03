@@ -26,8 +26,18 @@
               "sidebar": "docs"
             },
             {
+              "id": "nodes/administrator",
+              "path": "/nodes/administrator",
+              "sidebar": "docs"
+            },
+            {
               "id": "nodes/audit-log-store",
               "path": "/nodes/audit-log-store",
+              "sidebar": "docs"
+            },
+            {
+              "id": "nodes/customer",
+              "path": "/nodes/customer",
               "sidebar": "docs"
             },
             {
@@ -58,6 +68,16 @@
             {
               "id": "nodes/redis-cache",
               "path": "/nodes/redis-cache",
+              "sidebar": "docs"
+            },
+            {
+              "id": "relationships/administrator-to-gateway",
+              "path": "/relationships/administrator-to-gateway",
+              "sidebar": "docs"
+            },
+            {
+              "id": "relationships/customer-to-gateway",
+              "path": "/relationships/customer-to-gateway",
               "sidebar": "docs"
             },
             {

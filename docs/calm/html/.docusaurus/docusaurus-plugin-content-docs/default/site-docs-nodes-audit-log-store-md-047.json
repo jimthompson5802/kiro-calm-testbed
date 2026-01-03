@@ -20,7 +20,7 @@
     "permalink": "/nodes/notification-service"
   },
   "next": {
-    "title": "Gateway To Processor",
-    "permalink": "/relationships/gateway-to-processor"
+    "title": "Administrator",
+    "permalink": "/nodes/administrator"
   }
 }

@@ -21,6 +21,8 @@ C4Deployment
         Container(external-payment-provider, "External Payment Provider", "", "Third-party payment processor (Stripe, PayPal, etc.) for card processing and settlements")
         Container(notification-service, "Notification Service", "", "Handles payment confirmations, failure notifications, and webhook deliveries")
         Container(audit-log-store, "Audit Log Store", "", "Immutable audit trail for all payment operations and compliance reporting")
+        Person(administrator, "Administrator", "System administrator responsible for managing payment system operations, monitoring, and configuration")
+        Person(customer, "Customer", "End user who initiates payment transactions through various channels including web, mobile, and API integrations")
     }
 
     Rel(payment-api-gateway,payment-processor,"Connects To")
@@ -29,6 +31,8 @@ C4Deployment
     Rel(payment-processor,external-payment-provider,"Connects To")
     Rel(payment-processor,notification-service,"Connects To")
     Rel(payment-processor,audit-log-store,"Connects To")
+    Rel(administrator,payment-api-gateway,"Connects To")
+    Rel(customer,payment-api-gateway,"Connects To")
 
     UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="2")
 ```
@@ -40,6 +44,8 @@ C4Deployment
     - [External Payment Provider](nodes/external-payment-provider)
     - [Notification Service](nodes/notification-service)
     - [Audit Log Store](nodes/audit-log-store)
+    - [Administrator](nodes/administrator)
+    - [Customer](nodes/customer)
 
 ## Relationships
     - [Gateway To Processor](relationships/gateway-to-processor)
@@ -48,6 +54,8 @@ C4Deployment
     - [Processor To External Provider](relationships/processor-to-external-provider)
     - [Processor To Notifications](relationships/processor-to-notifications)
     - [Processor To Audit](relationships/processor-to-audit)
+    - [Administrator To Gateway](relationships/administrator-to-gateway)
+    - [Customer To Gateway](relationships/customer-to-gateway)
 
 
 ## Flows

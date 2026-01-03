@@ -1,16 +1,16 @@
 ---
-id: payment-api-gateway
-title: Payment API Gateway
+id: administrator
+title: Administrator
 ---
 
 ## Details
 <div className="table-container">
 | Field               | Value                    |
 |---------------------|--------------------------|
-| **Unique ID**       | payment-api-gateway                   |
-| **Node Type**       | service             |
-| **Name**            | Payment API Gateway                 |
-| **Description**     | Main entry point for all payment requests with authentication, rate limiting, and routing          |
+| **Unique ID**       | administrator                   |
+| **Node Type**       | actor             |
+| **Name**            | Administrator                 |
+| **Description**     | System administrator responsible for managing payment system operations, monitoring, and configuration          |
 
 </div>
 
@@ -29,7 +29,7 @@ title: Payment API Gateway
                         <b>UniqueId</b>
                     </td>
                     <td>
-                        payment-gateway-endpoint
+                        admin-interface
                             </td>
                 </tr>
                 <tr>
@@ -51,7 +51,7 @@ title: Payment API Gateway
                                         <b>Url</b>
                                     </td>
                                     <td>
-                                        https://api.company.com/payments/v1
+                                        https://api.company.com/payments/v1/admin
                                             </td>
                                 </tr>
                                 <tr>
@@ -75,10 +75,8 @@ title: Payment API Gateway
 ## Related Nodes
 ```mermaid
 graph TD;
-payment-api-gateway[payment-api-gateway]:::highlight;
-payment-api-gateway -- Connects --> payment-processor;
+administrator[administrator]:::highlight;
 administrator -- Connects --> payment-api-gateway;
-customer -- Connects --> payment-api-gateway;
 classDef highlight fill:#f2bbae;
 
 ```
@@ -97,34 +95,26 @@ classDef highlight fill:#f2bbae;
           <tbody>
           <tr>
               <td>
-                  <b>Runtime</b>
+                  <b>Role</b>
               </td>
               <td>
-                  Node.js 18
+                  system-admin
                       </td>
           </tr>
           <tr>
               <td>
-                  <b>Framework</b>
+                  <b>Access Level</b>
               </td>
               <td>
-                  Express.js
+                  privileged
                       </td>
           </tr>
           <tr>
               <td>
-                  <b>Deployment</b>
+                  <b>Authentication</b>
               </td>
               <td>
-                  Kubernetes
-                      </td>
-          </tr>
-          <tr>
-              <td>
-                  <b>Replicas</b>
-              </td>
-              <td>
-                  3
+                  multi-factor
                       </td>
           </tr>
           </tbody>

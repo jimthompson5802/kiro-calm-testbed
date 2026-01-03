@@ -1,16 +1,16 @@
 ---
-id: payment-api-gateway
-title: Payment API Gateway
+id: customer
+title: Customer
 ---
 
 ## Details
 <div className="table-container">
 | Field               | Value                    |
 |---------------------|--------------------------|
-| **Unique ID**       | payment-api-gateway                   |
-| **Node Type**       | service             |
-| **Name**            | Payment API Gateway                 |
-| **Description**     | Main entry point for all payment requests with authentication, rate limiting, and routing          |
+| **Unique ID**       | customer                   |
+| **Node Type**       | actor             |
+| **Name**            | Customer                 |
+| **Description**     | End user who initiates payment transactions through various channels including web, mobile, and API integrations          |
 
 </div>
 
@@ -29,7 +29,7 @@ title: Payment API Gateway
                         <b>UniqueId</b>
                     </td>
                     <td>
-                        payment-gateway-endpoint
+                        customer-interface
                             </td>
                 </tr>
                 <tr>
@@ -75,9 +75,7 @@ title: Payment API Gateway
 ## Related Nodes
 ```mermaid
 graph TD;
-payment-api-gateway[payment-api-gateway]:::highlight;
-payment-api-gateway -- Connects --> payment-processor;
-administrator -- Connects --> payment-api-gateway;
+customer[customer]:::highlight;
 customer -- Connects --> payment-api-gateway;
 classDef highlight fill:#f2bbae;
 
@@ -97,34 +95,26 @@ classDef highlight fill:#f2bbae;
           <tbody>
           <tr>
               <td>
-                  <b>Runtime</b>
+                  <b>Role</b>
               </td>
               <td>
-                  Node.js 18
+                  end-user
                       </td>
           </tr>
           <tr>
               <td>
-                  <b>Framework</b>
+                  <b>Access Level</b>
               </td>
               <td>
-                  Express.js
+                  standard
                       </td>
           </tr>
           <tr>
               <td>
-                  <b>Deployment</b>
+                  <b>Authentication</b>
               </td>
               <td>
-                  Kubernetes
-                      </td>
-          </tr>
-          <tr>
-              <td>
-                  <b>Replicas</b>
-              </td>
-              <td>
-                  3
+                  oauth2
                       </td>
           </tr>
           </tbody>

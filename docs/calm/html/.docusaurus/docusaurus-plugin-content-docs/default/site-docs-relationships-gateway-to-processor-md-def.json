@@ -16,8 +16,8 @@
   },
   "sidebar": "docs",
   "previous": {
-    "title": "Audit Log Store",
-    "permalink": "/nodes/audit-log-store"
+    "title": "Customer",
+    "permalink": "/nodes/customer"
   },
   "next": {
     "title": "Processor To Database",

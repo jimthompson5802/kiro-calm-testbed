@@ -48,17 +48,17 @@
       "plugin": "plugin---search-136-801"
     }
   },
-  "/-a5d": {
+  "/-bab": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---aba-d70"
     }
   },
-  "/-5e6": {
+  "/-da4": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---22-d-307"
   },
-  "/-5fb": {
+  "/-d79": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/flows/credit-card-payment-flow-01d": {
@@ -69,9 +69,17 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---flows-refund-processing-flowf-1-c-be0"
   },
+  "/nodes/administrator-d02": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---nodes-administratord-8-e-7a5"
+  },
   "/nodes/audit-log-store-70c": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---nodes-audit-log-store-047-c56"
+  },
+  "/nodes/customer-e62": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---nodes-customercc-1-95c"
   },
   "/nodes/external-payment-provider-8d8": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -96,6 +104,14 @@
   "/nodes/redis-cache-8fc": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---nodes-redis-cacheed-4-783"
+  },
+  "/relationships/administrator-to-gateway-f2c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---relationships-administrator-to-gateway-4-f-7-df1"
+  },
+  "/relationships/customer-to-gateway-786": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---relationships-customer-to-gatewayc-5-d-17c"
   },
   "/relationships/gateway-to-processor-679": {
     "__comp": "__comp---theme-doc-item-178-a40",

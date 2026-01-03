@@ -15,7 +15,9 @@ module.exports = {
                 'nodes/redis-cache',
                 'nodes/external-payment-provider',
                 'nodes/notification-service',
-                'nodes/audit-log-store'
+                'nodes/audit-log-store',
+                'nodes/administrator',
+                'nodes/customer'
             ],
         },
         {
@@ -27,7 +29,9 @@ module.exports = {
                 'relationships/processor-to-cache',
                 'relationships/processor-to-external-provider',
                 'relationships/processor-to-notifications',
-                'relationships/processor-to-audit'
+                'relationships/processor-to-audit',
+                'relationships/administrator-to-gateway',
+                'relationships/customer-to-gateway'
             ],
         },
         {

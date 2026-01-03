@@ -118,6 +118,42 @@
                     "port": 5432
                 }
             ]
+        },
+        {
+            "unique-id": "administrator",
+            "node-type": "actor",
+            "name": "Administrator",
+            "description": "System administrator responsible for managing payment system operations, monitoring, and configuration",
+            "interfaces": [
+                {
+                    "unique-id": "admin-interface",
+                    "url": "https://api.company.com/payments/v1/admin",
+                    "protocol": "HTTPS"
+                }
+            ],
+            "metadata": {
+                "role": "system-admin",
+                "access-level": "privileged",
+                "authentication": "multi-factor"
+            }
+        },
+        {
+            "unique-id": "customer",
+            "node-type": "actor",
+            "name": "Customer",
+            "description": "End user who initiates payment transactions through various channels including web, mobile, and API integrations",
+            "interfaces": [
+                {
+                    "unique-id": "customer-interface",
+                    "url": "https://api.company.com/payments/v1",
+                    "protocol": "HTTPS"
+                }
+            ],
+            "metadata": {
+                "role": "end-user",
+                "access-level": "standard",
+                "authentication": "oauth2"
+            }
         }
     ],
     "relationships": [
@@ -186,6 +222,28 @@
                 }
             },
             "protocol": "JDBC"
+        },
+        {
+            "unique-id": "administrator-to-gateway",
+            "description": "Accesses administrative functions through",
+            "relationship-type": {
+                "connects": {
+                    "source": { "node": "administrator" },
+                    "destination": { "node": "payment-api-gateway" }
+                }
+            },
+            "protocol": "HTTPS"
+        },
+        {
+            "unique-id": "customer-to-gateway",
+            "description": "Initiates payment transactions through",
+            "relationship-type": {
+                "connects": {
+                    "source": { "node": "customer" },
+                    "destination": { "node": "payment-api-gateway" }
+                }
+            },
+            "protocol": "HTTPS"
         }
     ],
     "flows": [

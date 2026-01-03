@@ -1,0 +1,26 @@
+{
+  "id": "nodes/customer",
+  "title": "Customer",
+  "description": "Details",
+  "source": "@site/docs/nodes/customer.md",
+  "sourceDirName": "nodes",
+  "slug": "/nodes/customer",
+  "permalink": "/nodes/customer",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "customer",
+    "title": "Customer"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Administrator",
+    "permalink": "/nodes/administrator"
+  },
+  "next": {
+    "title": "Gateway To Processor",
+    "permalink": "/relationships/gateway-to-processor"
+  }
+}
